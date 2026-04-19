@@ -1,0 +1,16 @@
+{
+	"status": "prod",
+	"clientId": "",
+	"token": "",
+	"adminContactUrl": "https://codump.github.io/go/discord/",
+	"masterGuild": "",
+	"systemLog": false,
+	"systemLogWebhook": "",
+	"feedbackChannelId": "",
+	"conLogError": true,
+	"conLogOK": true,
+	"conLogWarning": true,
+	"conLogObject": true,
+	"conLogColor": true,
+	"botStartNotificationForGuilds": true
+}

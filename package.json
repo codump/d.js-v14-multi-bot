@@ -1,0 +1,31 @@
+{
+  "name": "djs-v14-multi-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Codump",
+  "license": "ISC",
+  "dependencies": {
+    "@codump/conlog": "^2.1.2",
+    "discord.js": "^14.26.2"
+  },
+  "devDependencies" : {
+    "nodemon": "^3.1.14"
+  },
+  "keywords": [
+    "bot",
+    "multi-bot",
+    "discord",
+    "discord.js",
+    "d.js v14",
+    "codump"
+  ],
+  "bugs": {
+    "url": "https://github.com/codump/d.js-v14-multi-bot/issues"
+  },
+  "homepage": "https://codump.github.io/code/d.js-v14-multi-bot"
+}

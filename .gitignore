@@ -1,3 +1,10 @@
+#Project
+config.json
+*.code-workspace
+1041383897373626458/
+1049781019949138042/
+test.js
+
 # Logs
 logs
 *.log
