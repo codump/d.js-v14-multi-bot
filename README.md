@@ -1,7 +1,7 @@
 # d.js-v14-multi-bot
 This project allows you to run multiple unique bots within a single Discord application. You maintain full control over every command and event.
 
-By default, the bot pulls functionality from a global folder. However, if it detects specialized code assigned to a specific guild, it will overwrite the global functions with that guild-specific code. This enables each guild to have its own unique features. such as a custom `/help` command while still providing standard global functions to everyone else who adds the bot.
+By default, the bot pulls functionality from a global folder. However, if it detects specialized code assigned to a specific guild, it will overwrite the global functions with that guild-specific code. This enables each guild to have its own unique features, such as a custom `/help` command while still providing standard global functions to everyone else who adds the bot.
 
 *Note: This system is designed for use across a small number of guilds.*
 
