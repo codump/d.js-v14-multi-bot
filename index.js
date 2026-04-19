@@ -19,7 +19,8 @@ process.on('warning', (warning) => {
     ConLog(warning.stack, 'warning')
 })
 process.on('error', (error) => {
-    ConLog(error)
+    ConLog(`[ERROR] ${error.name}: ${error.message}`, 'error')
+    ConLog(error.stack, 'error')
 })
 
 const client = new Client({
@@ -55,7 +56,8 @@ client.on('interactionCreate', async (interaction) => {
             const command = require(commandPath)
             if (command.execute) await command.execute(interaction)
         } catch (error) {
-            ConLog(error)
+            ConLog(`[ERROR] ${error.name}: ${error.message}`, 'error')
+            ConLog(error.stack, 'error')
             const errPayload = { content: 'Error executing command!', flags: [MessageFlags.Ephemeral] }
             interaction.replied || interaction.deferred ? await interaction.followUp(errPayload) : await interaction.reply(errPayload)
         }
@@ -128,6 +130,8 @@ client.on('messageReactionAdd', async (reaction, user) => {
         try {
             await reaction.fetch()
         } catch (error) {
+            ConLog(`[ERROR] ${error.name}: ${error.message}`, 'error')
+            ConLog(error.stack, 'error')
             return ConLog(error)
         }
     }
@@ -161,6 +165,8 @@ client.on('messageReactionRemove', async (reaction, user) => {
         try {
             await reaction.fetch()
         } catch (error) {
+            ConLog(`[ERROR] ${error.name}: ${error.message}`, 'error')
+            ConLog(error.stack, 'error')
             return ConLog(error)
         }
     }

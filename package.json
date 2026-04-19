@@ -1,7 +1,7 @@
 {
   "name": "djs-v14-multi-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Run multiple unique bots per guild under one.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
