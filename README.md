@@ -26,8 +26,7 @@ Also make sure to fill in the `guild-config.json` per guild folder.
 `npm run dev` for nodemon local development
 `npm start` for production
 
-global folder is for set global functions
-guilds folder contains guildId specific functions
+Global folder is for set global functions, guilds folder contains guildId specific functions.
 
 If the guild doesn't have a `setup.js` command, it will say they have a global install even tho they have a unique guild bot. So always make sure a new guild folder contains a setup.js command. Also make sure to fill in the `guild-config.json` per guild folder. Check out the guilds-folder-template to ensure you have all the needed files for a guild bot. The guild folder should be name with the corresponding guildID.
 
