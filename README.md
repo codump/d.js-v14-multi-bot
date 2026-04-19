@@ -24,9 +24,9 @@ Also make sure to fill in the `guild-config.json` per guild folder.
 
 ## Install and how to
 
-`npm i` for install
-`npm run dev` for nodemon local development
-`npm start` for production
+- `npm i` for install.
+- `npm run dev` for nodemon local development.
+- `npm start` for production.
 
 Global folder is for set global functions, guilds folder contains guildId specific functions.
 
